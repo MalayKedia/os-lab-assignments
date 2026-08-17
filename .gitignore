@@ -1,0 +1,80 @@
+# ---------------------------------------------------------------
+# xv6 build artifacts
+# ---------------------------------------------------------------
+*.o
+*.d
+*.asm
+*.sym
+*.out
+*.img
+
+# xv6 generated files
+vectors.S
+bootblock
+bootblockother.o
+entryother
+initcode
+kernel
+kernelmemfs
+mkfs
+.gdbinit
+
+# xv6 userspace program binaries (_cat, _ls, _sh, _t_lock, ...)
+_*
+
+# ---------------------------------------------------------------
+# Compiled binaries from the Linux labs
+# ---------------------------------------------------------------
+a.out
+
+# lab1
+lab1-intro_to_linux_tools/cpu
+lab1-intro_to_linux_tools/cpu-print
+lab1-intro_to_linux_tools/disk
+lab1-intro_to_linux_tools/disk1
+lab1-intro_to_linux_tools/mem1
+lab1-intro_to_linux_tools/mem2
+lab1-intro_to_linux_tools/disk-files/
+
+# lab2
+lab2-shell-code/shell
+lab2-shell-code/practice_exercises/q[0-9]
+
+# lab6
+lab6-ipc*/prod
+lab6-ipc*/cons
+lab6-ipc*/client
+lab6-ipc*/server
+lab6-ipc*/shell
+lab6-ipc*/shm-posix-producer
+lab6-ipc*/shm-posix-consumer
+
+# lab8
+lab8-threads/rwlock/rwlock-reader-pref
+lab8-threads/rwlock/rwlock-writer-pref
+lab8-threads/zemaphore/test-zem
+lab8-threads/zemaphore/test-toggle
+lab8-threads/master-worker/master-worker
+
+# ---------------------------------------------------------------
+# Nested xv6 clones: upstream git history, renamed aside so the
+# working tree gets tracked by this repo instead of as a gitlink
+# ---------------------------------------------------------------
+.git.bak/
+
+# ---------------------------------------------------------------
+# Not part of the submitted work: scratch practice sets and the
+# pristine upstream xv6 checkouts kept locally for diffing
+# ---------------------------------------------------------------
+Practice/
+xv6-public-lab0/
+xv6-public-unmodified/
+lab4-xv6-proc/xv6/
+
+# ---------------------------------------------------------------
+# Editor / OS cruft
+# ---------------------------------------------------------------
+.vscode/
+._*
+.DS_Store
+*.swp
